@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Yudhvir Singh Sekhon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars">
+    <h1 class="typing">About Me</h1>
+    <div class="body">
+      <div class="container">
+
+        <section class="card section">
+          <h2>Who I Am</h2>
+          <p>I'm Yudhvir Singh Sekhon, a curious mind driven by innovation, exploration, and the power of creation. I thrive at the intersection of technology and creativity.</p>
+        </section>
+
+        <section class="card section">
+          <h2>Tech Projects</h2>
+          <p>I'm currently developing a custom operating system named <strong>"Modular Adapting Zone"</strong>.
+             It is semi-open source. I've also built circuits in Tinkercad and worked across various domains like web dev, game dev, and software design.
+          </p>
+        </section>
+
+        <section class="card section">
+          <h2>Research Work</h2>
+          <p>Engaged in neural network research, focusing on:</p>
+          <ul>
+            <li>Backpropagation</li>
+            <li>Self-Organizing Maps (SOMs)</li>
+            <li>Neurodynamics</li>
+          </ul>
+          <p>Engaged in Biology research, focusing on:</p>
+          <ul>
+            <li>Telomere count</li>
+            <li>Cell Immortality</li>
+            <li>Elher's Danlos Syndrome</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>Skills</h2>
+          <p>Languages & Tools:</p>
+          <ul>
+            <li>C, C++, C#, Python, Java, HTML, CSS, Lua, PHP, SQL</li>
+            <li>Cybersecurity & Machine Learning</li>
+            <li>Music Composition, 3D & Graphic Design</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>Languages</h2>
+          <p>I speak:</p>
+          <ul>
+            <li>English, Hindi, Punjabi, French, Russian, German, Japanese, Arabic, Greek, Latin</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/umbra-uvazzz" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:uvsekhon.official@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://youtube.com/@намдействительнонужноимя" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+      © Yudhvir Singh Sekhon 2025. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+  
+    const appearOptions = {
+      threshold: 0.3,
+      rootMargin: "0px 0px -50px 0px"
+    };
+  
+    const appearOnScroll = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        obs.unobserve(entry.target);
+      });
+    }, appearOptions);
+  
+    faders.forEach(el => {
+      appearOnScroll.observe(el);
+    });
+  </script>
+  <section class="card fade-in"> ... </section>
+  </body>
+  </html>
+  
+</body>
+</html>

@@ -92,6 +92,7 @@ footer {
 }
 
 footer .copyright {
+  margin-right: 60px;
   font-family: 'Times New Roman', serif;
   font-size: 14px;
   color: #b3b6ff;
